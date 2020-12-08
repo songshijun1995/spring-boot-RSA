@@ -1,0 +1,18 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: spring-boot-RSA
+
+rsa:
+  encrypt:
+    open: true # 是否开启加密 true  or  false
+    showLog: true # 是否打印加解密log true  or  false
+    # RSA公钥 软件生成
+    publicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCiquj4HR5VBtSJiKTyr18/vLaO5fJb6L/BrawFR4u+QCP3SF6SEd4pwp5Ev2R5pS34YGU00XFCejPgDfsSnRITanvv5a5wnNLFJMaz7ACxCrZjmW3z+ZppR/I19mJsaTOOopChUMJNBdvxUO13suwYad1Nhk5fmAJn0xQJgeWR/QIDAQAB
+    # RSA私钥 软件生成
+    privateKey: MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAKKq6PgdHlUG1ImIpPKvXz+8to7l8lvov8GtrAVHi75AI/dIXpIR3inCnkS/ZHmlLfhgZTTRcUJ6M+AN+xKdEhNqe+/lrnCc0sUkxrPsALEKtmOZbfP5mmlH8jX2YmxpM46ikKFQwk0F2/FQ7Xey7Bhp3U2GTl+YAmfTFAmB5ZH9AgMBAAECgYANiipQFKRksWfZds08AgrslDmh1VQCAHKNnXYXDmh8Unxr5dMxV1llonRoBoJHec9EwElMRy6lOOS+fotqdjZ90yTGTl5wPLX7Yan+OfeOJCkDdPhIurcPPi0RYXKSRags/SX3mvkhauxGIUY0xPDJJDJ/Kaby7HrT9PQELSbV5QJBAN3zio37hJxH5G7T2WMNbxA5sB4Ey5rOc+f7c5fARFs9QC2vbIyHP73pR9igZ4Pm8OiMcuWLrK0kvZfuCuFruBcCQQC7ny61wekt6bfCCfK0mtZt+SEEINqDsXICIyzgEShfURWoIPKlUQseqhtLg7vkPErkBoA8I3y9ozejwV8zIT8LAkEAhAaCvMKIt43sTCCoh0tObZBjOvgPRR7Zw3zH3dT41G0y5/oZz94EBKvnmOyRptyRIUOqdPEI3lWkkeN/hWfWMQJBAKOXVUwHqsBss9vNfsD47RTwj1ghKUaAlu7EKuGoNDJ/6ckyCUAZ3P88xRXf5BlKdOZDwNYu/xn+0YnIFrDnQScCQFobGRWnckBrm/GZ59/9vl5H1Z2MSbuDHgJBuxe6cq5RUhxFMW/KJ4hgfeiwp7xfpt162yMGlcqPNHyCTf6bVnA=
+
+
+
