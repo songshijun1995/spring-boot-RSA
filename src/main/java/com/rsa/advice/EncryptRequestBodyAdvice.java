@@ -36,7 +36,7 @@ public class EncryptRequestBodyAdvice implements RequestBodyAdvice {
             }
         }
 
-        return Objects.requireNonNull(methodParameter.getMethod()).isAnnotationPresent(Decrypt.class) && this.secretKeyConfig.isOpen();
+       return this.encrypt = Objects.requireNonNull(methodParameter.getMethod()).isAnnotationPresent(Decrypt.class) && this.secretKeyConfig.isOpen();
     }
 
     public Object handleEmptyBody(Object body, HttpInputMessage inputMessage, MethodParameter parameter, Type targetType, Class<? extends HttpMessageConverter<?>> converterType) {
