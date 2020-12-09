@@ -11,21 +11,21 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
-@Encrypt
-@Decrypt
+//@Encrypt
+//@Decrypt
 @RestController
 public class TestController {
 
-//    @Encrypt
+    @Encrypt
     @GetMapping("/encryption")
     public TestBean encryption(){
         TestBean testBean = new TestBean();
-        testBean.setUsername("shuibo.cn");
+        testBean.setUsername("小明觉得不错");
         testBean.setAge(18);
         return testBean;
     }
 
-//    @Decrypt
+    @Decrypt
     @PostMapping("/decryption")
     public TestBean Decryption(@RequestBody String testBean) {
         log.info("testBean : [{}]", testBean);
